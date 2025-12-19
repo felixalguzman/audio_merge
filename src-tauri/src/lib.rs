@@ -125,7 +125,7 @@ pub fn run() {
                         }
                     }
                 })
-                .icon(tauri::image::Image::from_bytes(include_bytes!("../icons/icon.png")).unwrap())
+                .icon(app.default_window_icon().unwrap().clone())
                 .build(app)?;
 
             Ok(())
